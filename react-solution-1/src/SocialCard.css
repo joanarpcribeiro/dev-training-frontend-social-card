@@ -1,0 +1,126 @@
+/* We use here the BEM convention: http://getbem.com/naming/ */
+
+.SocialCard {
+  box-shadow: 0 8px 12px 0 hsla(0, 0%, 0%, 0.2);
+  width: 400px;
+  border-radius: 20px;
+  position: relative;
+  margin: 10px;
+  font-size: 16px;
+  color: hsl(0,0%,13%);
+}
+
+.SocialCard__background-img {
+  border-radius: 20px 20px 0 0;
+  height: 160px;
+  background-image: url(/img/lisbon.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.SocialCard__profile-picture {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 120px;
+  border: 4px solid white;
+  position: absolute;
+  top: calc(160px - 120px/2 - 4px);
+  left: 10px;
+}
+
+
+.SocialCard__main-info {
+  margin: 10px 5px 10px 150px;
+}
+
+.SocialCard__name {
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.SocialCard__call-to-action {
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.SocialCard__call-to-action > * {
+  margin: 5px;
+}
+
+.SocialCard__followers-group {
+  margin: 20px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.SocialCard__followers-tooltip {
+  margin-left: -15px;
+  
+}
+.SocialCard__followers-tooltip:first-child {
+  margin-left: -4px;
+}
+
+.SocialCard__followers-picture {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+
+.SocialCard__followers-more {
+  border: 2px solid hsl(0, 0%, 70%);
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 13px;
+  margin-left: auto;
+}
+
+.SocialCard__footer {
+  border-top: 2px solid hsl(0, 0%, 95%);
+  padding: 20px;
+}
+
+.SocialCard__nb-of-followers {
+  color: hsl(0,0%,13%);
+  font-weight: 900;
+}
+
+.button {
+  border: 2px solid hsl(0, 0%, 70%);
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: hsl(0,0%,13%);
+  font-weight: 700;
+  width: 100%;
+}
+
+.button--block {
+  display: block;
+  text-align: center;
+}
+
+.button--primary {
+  border-color: rgb(58,122,219);
+  background-color: rgb(58,122,219);
+  color: white;
+}
+
+
+.icon--left {
+  margin-right: 7px;
+}
+
+
+.text--light {
+  color: hsl(0, 0%, 45%);
+}
